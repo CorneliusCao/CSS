@@ -1,0 +1,21 @@
+/*
+	justify-content: flext-start; pack item from the start
+	justify-content: flex-end; pack item from the end
+	justify-content: center; pack item around the center
+	justify-content: space-between; the first and the last item is flush with the start and the end
+	justify-content: space-around; khoảng cách từ start tới đứa đầu tiên và last tới đứa cuối cùng bằng khoảng cách giữa mấy đứa chia 2
+	justify-content: space-evenly; khoảng cách chia đều
+
+	align-item : tương tự như trên nhưng làm theo chiều dọc;
+	lưu ý với stretch: nó ở giữa nhưng sẽ làm cho bọn con dài ra chiếm nguyên chiều dài;
+*/
+
+
+.container {
+	background-color: #DDD;
+	display         : flex;
+	flex-direction  : row;
+	justify-content : flex-end;
+	align-items     : flex-end;
+	height          : 300px;
+}

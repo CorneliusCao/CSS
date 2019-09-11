@@ -1,0 +1,44 @@
+/*
+	display: flex;
+	flex-direction: ;
+	justify-content: ;
+	align-item: ;
+	flex-basis: <Length>;
+
+	flex-grow: <number>;
+	để cho 1 cái div giãn ra chiếm hết thì cho flex-grow của nó là 1,
+	những đứa còn lại để là 0
+*/
+
+body {
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	background-color: #DDD;
+	color: #FFF;
+	flex-direction: row;
+}
+
+.container div {
+	text-align: center;
+}
+
+.child-1 {
+	background-color: red;
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+
+.child-2 {
+	background-color: blue;
+	flex-basis: 100px;
+	flex-grow: 1;
+}
+
+.child-3 {
+	background-color: green;
+	flex-basis: 200px;
+	flex-grow: 1;
+}

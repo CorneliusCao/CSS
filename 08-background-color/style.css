@@ -1,0 +1,29 @@
+.list-item {
+	background: red;
+	height: 200px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.list-item-pattern {
+	background-image: url(./ab.jpg);
+	background-size: contain;
+	/*background-repeat: no-repeat;
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;*/
+}
+
+.list-item-image {
+	background-image: url(./bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-position: 0 400px; /*background-position: x y*/
+}
+
+.list-item-parallax {
+	background-image: url(./bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*background-position: x y , muon len tren thi -, muon xuong duoi thi +, muon qua ben trai thi tru, qua ben phai la cong*/

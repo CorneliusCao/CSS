@@ -1,0 +1,49 @@
+/*
+	CSS Combinators
+	descendant selector (space)
+	child selector (>)
+	adjacent sibling selector (+)
+	general sibling selectoc (~)
+*/
+{
+"workbench.startupEditor": "newUntitledFile",
+"workbench.colorTheme": "Monokai",
+"editor.fontFamily": "'Fira Code Medium','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+"editor.fontSize": 17,
+"material-icon-theme.showWelcomeMessage": false,
+"workbench.iconTheme": "material-icon-theme",
+"explorer.confirmDragAndDrop": false,
+"explorer.confirmDelete": false,
+"workbench.colorCustomizations": {
+"[Monokai]": {
+"editor.background": "#212117",
+"sideBar.background": "#272727"
+}
+},
+"editor.tokenColorCustomizations": {
+"[Monokai]": {
+"comments": "#229977"
+}
+}
+}
+
+/*Từ list 2 chọn những thằng có class item 2*/
+.list-2 .item-2 {
+	color: red;
+}
+
+
+/*Từ lít 1 chọn những thằng con có class item, những thằng cháu trong từng thằng con bỏ đi hết*/
+.list-1 > .item {
+	border: 1px solid #ddd;
+}
+
+/*Từ list 1 từ thằng có class name là item1 chọn thằng tiếp theo có class name là item*/
+.list1 .item-1 + .item {
+	color: blue;
+}
+
+/*Từ list 1 từ thằng có class name là item1 chọn hết những thằng tiếp theo có class name là item*/
+.list1 .item1 ~ item {
+	color: orange;
+}
